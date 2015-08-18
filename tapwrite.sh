@@ -15,7 +15,7 @@ else
 		done
 		printf "@" >> $tmp
 		echo "$1" >> $tmp
-		cat "$1" | base64 -w 0 >> $tmp		
+		cat "$1" | base64 >> $tmp		
 		echo "," >> $tmp
 		cat $tmp | minimodem -t $baudrate -v 0.1 -f out.wav
 		rm $tmp
