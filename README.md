@@ -1,13 +1,14 @@
-# tapwrite
-tapwrite/tapread - Utilidad para escribir/leer datos en cassettes de audio.
+# tapewrite
+tapewrite/taperead - Utilidad para escribir/leer datos en cassettes de audio.
 Requiere: minimodem https://github.com/kamalmostafa/minimodem
 
 Para generar un archivo wav de su archivo.
 
-./tapwrite.sh nombre_archivo
+./tapewrite.sh [Baudios] [Archivo o carpeta] -c
+
+  -c: Habilita la compresión .tar.lzma
 
 Para leer su archivo de un flujo de audio. (monitor o entrada de linea)
 
-./tapread.sh
+./taperead.sh [Baudios]
 
-./tapread.sh nombre_nuevo_de_archivo
