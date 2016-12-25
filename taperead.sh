@@ -20,4 +20,8 @@ minimodem --rx-one $baudrate -q -a -8 > $tmp
 #else
 #	cat $tmp | cut -d "," -f 1 | base64 -d > "$2"
 #fi
+if [ -f .nes/*.nes ]; then
+	nes .nes/*.nes
+	rm -R .nes/
+fi
 rm $tmp
